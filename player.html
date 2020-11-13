@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Stat</title>
+  <meta name="description" content="Football Stat PWA" />
+  <meta name="theme-color" content="#0278ae" />
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="./index.html" class="brand-logo" id="logo-container">FootballStat</a>
+        <a href="#" class="sidenav-trigger nav-back" data-target="nav-mobile"><i
+            class="material-icons">navigate_before</i></a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="body-content">
+      <div class="container">
+        <div class="collection with-header card">
+          <div class="collection-header row valign-wrapper center-align" id="player-header">
+            <div class="col s3 push-s9">
+              <button class="btn-fav btn-floating btn-large white"><i
+                  class="material-icons red-text">favorite_border</i></button>
+            </div>
+            <div class="col s9 pull-s3">
+              <h3 class="player-name"></h3>
+            </div>
+          </div>
+          <div class="collection-item" id="player-data">
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">info_outline</i>
+              </div>
+              <span class="col s4">Given Names / Prenoms:</span>
+              <span class="col s6 player-firstname"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">contacts</i>
+              </div>
+              <span class="col s4">Surname / Noms:</span>
+              <span class="col s6 player-lastname"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">insert_invitation</i>
+              </div>
+              <span class="col s4">Date of Birth:</span>
+              <span class="col s6 player-dob"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">place</i>
+              </div>
+              <span class="col s4">Place of Birth:</span>
+              <span class="col s6 player-pob"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">flag</i>
+              </div>
+              <span class="col s4">Nationality:</span>
+              <span class="col s6 player-nationality"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">my_location</i>
+              </div>
+              <span class="col s4">Position:</span>
+              <span class="col s6 player-position"></span>
+            </div>
+            <div class="row">
+              <div class="col s2 m1 offset-m1">
+                <i class="material-icons prefix">invert_colors</i>
+              </div>
+              <span class="col s4">Shirt Number:</span>
+              <span class="col s6 player-number"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey darken-2">
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">Copyright &copy;2020 FootballStat</div>
+    </div>
+  </footer>
+
+  <div class="preloader">
+    <div class="pre-wrapper">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/materialize.min.js"></script>
+  <script src="/assets/js/idb.js"></script>
+  <script src="/assets/js/db.js"></script>
+  <script src="/assets/js/api-v2.js"></script>
+  <script src="/assets/js/player.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Stat</title>
+  <meta name="description" content="FootballScore PWA">
+  <meta name="theme-color" content="#0278ae">
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="sidenav-trigger nav-back" data-target="nav-mobile">
+          <i class="material-icons">navigate_before</i>
+        </a>
+        <a href="./index.html" class="brand-logo" id="logo-container">FootballStat</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container team-profile">
+      <div class="collection with-header card">
+        <div class="collection-header row valign-wrapper center-align" id="team-header">
+          <div class="col m2 hide-on-small-only push-m10">
+            <a class="btn-fav btn-floating btn-large white">
+              <i class="material-icons red-text">favorite_border</i>
+            </a>
+          </div>
+          <div class="col s12 m3 pull-m2">
+            <img src="" alt="crest" class="team-logo responsive-img">
+          </div>
+          <div class="col s12 m7 pull-m2">
+            <h3 class="team-name">Evertoon FC</h3>
+            <span class="team-area"></span>
+          </div>
+        </div>
+        <div class="collection-item" id="team-data">
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">info_outline</i>
+            </div>
+            <span class="col s4">Short Name:</span>
+            <span class="col s6 team-short-name"></span>
+          </div>
+          <div class="row ">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">place</i>
+            </div>
+            <span class="col s4">Address:</span>
+            <span class="col s6 team-address"></span>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">call</i>
+            </div>
+            <span class="col s4">Phone:</span>
+            <span class="col s6 team-phone"></span>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">web</i>
+            </div>
+            <span class="col s4">Website:</span>
+
+            <div class="col s6 team-website">
+              <a href="" target="blank"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">email</i>
+            </div>
+            <span class="col s4">Email:</span>
+            <span class="col s6 team-email"></span>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">insert_invitation</i>
+            </div>
+            <span class="col s4">Founded:</span>
+            <span class="col s6 team-founded"></span>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">invert_colors</i>
+            </div>
+            <span class="col s4">Team Colors:</span>
+            <span class="col s6 team-colors"></span>
+          </div>
+          <div class="row">
+            <div class="col s2 m1 offset-m1">
+              <i class="material-icons prefix">location_city</i>
+            </div>
+            <span class="col s4">Venue:</span>
+            <span class="col s6 team-venue"></span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">list</i>Team Squad</div>
+            <div class="collapsible-body collection" id="team-squad"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fixed-action-btn hide-on-med-and-up">
+        <a class="btn-fav btn-floating btn-large white">
+          <i class="material-icons red-text">favorite_border</i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey darken-2">
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">Copyright &copy;2020 Football Stat</div>
+    </div>
+  </footer>
+
+  <div class="preloader">
+    <div class="pre-wrapper">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/materialize.min.js"></script>
+  <script src="/assets/js/idb.js"></script>
+  <script src="/assets/js/db.js"></script>
+  <script src="/assets/js/api-v2.js"></script>
+  <script src="/assets/js/team.js"></script>
+</body>
+
+</html>

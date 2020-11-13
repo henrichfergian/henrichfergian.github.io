@@ -1,0 +1,30 @@
+{
+  "name": "football-score",
+  "version": "1.0.0",
+  "description": "a PWA Web-App that provide information about football, competitions, matches, and teams",
+  "main": "index.js",
+  "scripts": {
+    "Test": "echo: no script configured"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrichfergian/football-score.git"
+  },
+  "author": "henrich.fl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrichfergian/football-score/issues"
+  },
+  "homepage": "https://github.com/henrichfergian/football-score#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "dependencies": {
+    "idb": "^2.1.3",
+    "web-push": "^3.4.4"
+  }
+}

@@ -1,0 +1,43 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <h1 class="indigo-text text-accent-1 col s12">Standings</h1>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose The Competition</option>
+          <option value="2001">UEFA Champions League</option>
+          <option value="2002">Bundesliga</option>
+          <option value="2003">Eredivisie</option>
+          <option value="2021">Premier League</option>
+          <option value="2014">Primera Division</option>
+          <option value="2015">Ligue 1</option>
+        </select>
+        <label>Competition</label>
+      </div>
+      <div class="col s12">
+        <h2 class="indigo-text text-accent-1 competition-name"></h2>
+      </div>
+    </div>
+    <div class="card competition-standings">
+      <table class="row responsive-table highlight centered">
+        <div class="col s12">
+          <thead>
+            <tr>
+              <th class="group-thead">Group</th>
+              <th>Pos</th>
+              <th class="club">Club</th>
+              <th>Pl</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody id="standings-content">
+          </tbody>
+        </div>
+      </table>
+    </div>
+  </div>
+</section>

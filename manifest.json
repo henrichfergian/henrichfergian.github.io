@@ -1,0 +1,20 @@
+{
+  "name": "Football Stat",
+  "short_name": "football",
+  "icons": [{
+    "src": "/assets/img/icons/android-chrome-192x192.png",
+    "sizes": "384x384",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }, {
+    "src": "/assets/img/icons/android-chrome-512x512.png",
+    "sizes": "1024x1024",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }],
+  "start_url": "/index.html",
+  "theme_color": "#0278ae",
+  "background_color": "#0278ae",
+  "display": "standalone",
+  "gcm_sender_id": "864943993971"
+}
